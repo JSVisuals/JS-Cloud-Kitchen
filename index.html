@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="JS Cloud Kitchen — freshly prepared food, easy ordering and a delicious menu.">
+  <meta name="theme-color" content="#17110c">
+  <title>JS Cloud Kitchen | Fresh Food & Online Orders</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Freshly prepared • Easy ordering • Made for your cravings</div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="JS Cloud Kitchen home">
+      <span class="brand-mark">JS</span>
+      <span><strong>JS</strong> CLOUD KITCHEN</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-dark" href="#order">Order Now</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">JS CLOUD KITCHEN</span>
+        <h1>Good food.<br><em>Great cravings.</em></h1>
+        <p>Freshly prepared favourites, packed with flavour and made for an easy, satisfying order.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#menu">View Menu <span>→</span></a>
+          <a class="btn btn-ghost" href="#order">Order Now</a>
+        </div>
+        <div class="trust-mini">
+          <span>✦ Freshly prepared</span>
+          <span>✦ Easy ordering</span>
+          <span>✦ Food made with care</span>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-orbit"></div>
+        <div class="hero-image-wrap">
+          <img src="assets/main-1.jpg" alt="Food from JS Cloud Kitchen">
+        </div>
+        <div class="floating-card card-one"><span>🍽</span><b>Made fresh</b><small>for every order</small></div>
+        <div class="floating-card card-two"><b>Hungry?</b><small>Let's fix that.</small></div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><span>01</span><b>Freshly Prepared</b><small>Made for your order</small></div>
+      <div><span>02</span><b>Quality Food</b><small>Simple, satisfying flavours</small></div>
+      <div><span>03</span><b>Easy Ordering</b><small>Order in a few taps</small></div>
+      <div><span>04</span><b>Made With Care</b><small>From kitchen to you</small></div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="section-heading reveal">
+        <div>
+          <span class="eyebrow">THE MENU</span>
+          <h2>What's cooking<br><em>today?</em></h2>
+        </div>
+        <p>Explore the menu from JS Cloud Kitchen and choose your favourites. The original menu reference is preserved below so the published menu can be updated with exact names and prices.</p>
+      </div>
+
+      <div class="filters" role="tablist" aria-label="Menu categories">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="main">Main Course</button>
+        <button class="filter" data-filter="fried">Fried Rice</button>
+        <button class="filter" data-filter="chapati">Chapati</button>
+      </div>
+
+      <div class="menu-grid">
+        <article class="food-card reveal" data-category="main">
+          <div class="food-image"><img src="assets/main-1.jpg" alt="Main course dish"><span class="category-pill">MAIN COURSE</span></div>
+          <div class="food-info"><h3>Main Course</h3><p>See the original JS Cloud Kitchen menu for the exact dish name and price.</p><button class="order-item" data-item="Main Course">Order Now</button></div>
+        </article>
+        <article class="food-card reveal" data-category="main">
+          <div class="food-image"><img src="assets/main-2.jpg" alt="Main course with rice"><span class="category-pill">MAIN COURSE</span></div>
+          <div class="food-info"><h3>Main Course Favourite</h3><p>Prepared fresh and served with the style shown in the original menu.</p><button class="order-item" data-item="Main Course Favourite">Order Now</button></div>
+        </article>
+        <article class="food-card reveal" data-category="fried">
+          <div class="food-image"><img src="assets/fried-1.jpg" alt="Fried rice"><span class="category-pill">FRIED RICE</span></div>
+          <div class="food-info"><h3>Fried Rice</h3><p>Choose from the fried-rice options shown in the original menu.</p><button class="order-item" data-item="Fried Rice">Order Now</button></div>
+        </article>
+        <article class="food-card reveal" data-category="fried">
+          <div class="food-image"><img src="assets/fried-2.jpg" alt="Fried rice dish"><span class="category-pill">FRIED RICE</span></div>
+          <div class="food-info"><h3>Fried Rice Special</h3><p>A visual menu selection from the supplied JS Cloud Kitchen reference.</p><button class="order-item" data-item="Fried Rice Special">Order Now</button></div>
+        </article>
+        <article class="food-card reveal" data-category="fried">
+          <div class="food-image"><img src="assets/fried-3.jpg" alt="Fried rice bowl"><span class="category-pill">FRIED RICE</span></div>
+          <div class="food-info"><h3>Fried Rice Choice</h3><p>Check the original menu image for the exact item and price.</p><button class="order-item" data-item="Fried Rice Choice">Order Now</button></div>
+        </article>
+        <article class="food-card reveal" data-category="chapati">
+          <div class="food-image"><img src="assets/chapati-1.jpg" alt="Chapati meal"><span class="category-pill">CHAPATI</span></div>
+          <div class="food-info"><h3>Chapati</h3><p>Fresh chapati options from the supplied JS Cloud Kitchen menu.</p><button class="order-item" data-item="Chapati">Order Now</button></div>
+        </article>
+        <article class="food-card reveal" data-category="chapati">
+          <div class="food-image"><img src="assets/chapati-2.jpg" alt="Chapati with curry"><span class="category-pill">CHAPATI</span></div>
+          <div class="food-info"><h3>Chapati Combo</h3><p>See the reference menu for the exact combination and price.</p><button class="order-item" data-item="Chapati Combo">Order Now</button></div>
+        </article>
+      </div>
+
+      <div class="reference-note reveal">
+        <div>
+          <span class="eyebrow">ORIGINAL MENU</span>
+          <h3>Keep the real menu at the centre.</h3>
+          <p>This website includes the supplied menu reference. Replace the card labels/prices with the exact readable menu details before publishing.</p>
+        </div>
+        <img src="assets/menu-reference.jpg" alt="Original JS Cloud Kitchen menu reference">
+      </div>
+    </section>
+
+    <section class="featured">
+      <div class="featured-image reveal"><img src="assets/fried-1.jpg" alt="Featured JS Cloud Kitchen food"></div>
+      <div class="featured-copy reveal">
+        <span class="eyebrow">CRAVING SOMETHING?</span>
+        <h2>Your next favourite meal could be <em>one click away.</em></h2>
+        <p>Browse the menu, choose what you love, and send your order request directly to JS Cloud Kitchen.</p>
+        <a class="btn btn-primary" href="#order">Start Your Order <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="section why-section" id="why-us">
+      <div class="section-heading center reveal">
+        <span class="eyebrow">WHY JS CLOUD KITCHEN</span>
+        <h2>Simple food.<br><em>Easy choice.</em></h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal"><span>✦</span><h3>Freshly prepared</h3><p>Food-focused ordering experience designed around freshly prepared meals.</p></div>
+        <div class="why-card reveal"><span>✦</span><h3>Easy to explore</h3><p>A clean menu makes it simple to discover what you want.</p></div>
+        <div class="why-card reveal"><span>✦</span><h3>Quick ordering</h3><p>Move from menu to WhatsApp order without unnecessary steps.</p></div>
+        <div class="why-card reveal"><span>✦</span><h3>Mobile first</h3><p>Designed for the way customers actually order food: on their phones.</p></div>
+      </div>
+    </section>
+
+    <section class="story" id="about">
+      <div class="story-copy reveal">
+        <span class="eyebrow">ABOUT JS CLOUD KITCHEN</span>
+        <h2>Made for your<br><em>cravings.</em></h2>
+        <p>JS Cloud Kitchen is presented as a modern, convenient food brand where customers can discover the menu and place an order with minimal effort.</p>
+        <p>The site intentionally keeps the brand warm, premium and food-first — without making unsupported claims about awards, ratings or years of experience.</p>
+      </div>
+      <div class="story-visual reveal">
+        <img src="assets/main-2.jpg" alt="JS Cloud Kitchen food">
+        <div class="stamp">JS<br><small>GOOD FOOD</small></div>
+      </div>
+    </section>
+
+    <section class="order-section" id="order">
+      <div class="order-panel reveal">
+        <div class="order-intro">
+          <span class="eyebrow">READY TO ORDER?</span>
+          <h2>Let's make your<br><em>craving happen.</em></h2>
+          <p>Fill in your details and the website will prepare an order message for WhatsApp.</p>
+          <div class="quick-actions">
+            <a class="quick" id="whatsappTop" href="#"><span>◉</span> WhatsApp Us</a>
+            <a class="quick" id="phoneTop" href="#"><span>☎</span> Call Now</a>
+          </div>
+        </div>
+        <form id="orderForm" class="order-form">
+          <label>Customer Name<input name="name" required placeholder="Your name"></label>
+          <label>Phone Number<input name="phone" required inputmode="tel" placeholder="Your phone number"></label>
+          <label>Food Item<select name="item" required>
+            <option value="">Select an item</option>
+            <option>Main Course</option><option>Fried Rice</option><option>Chapati</option><option>Other / Ask on WhatsApp</option>
+          </select></label>
+          <label>Quantity<input name="quantity" type="number" min="1" value="1" required></label>
+          <label class="full">Delivery Address<textarea name="address" rows="3" required placeholder="Enter delivery address"></textarea></label>
+          <label class="full">Special Instructions<textarea name="notes" rows="2" placeholder="Optional"></textarea></label>
+          <button class="btn btn-primary full" type="submit">Place Order on WhatsApp <span>→</span></button>
+          <p class="form-note">Order details are sent to the WhatsApp number configured in <code>script.js</code>.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-heading reveal"><span class="eyebrow">CONTACT</span><h2>Hungry?<br><em>We're here.</em></h2></div>
+      <div class="contact-grid reveal">
+        <div><small>PHONE</small><a id="phoneLink" href="#">Add phone number</a></div>
+        <div><small>WHATSAPP</small><a id="whatsappLink" href="#">Order on WhatsApp</a></div>
+        <div><small>WORKING HOURS</small><p>Add working hours</p></div>
+        <div><small>LOCATION</small><p>Add address / Google Maps link</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><span class="brand-mark">JS</span><div><strong>JS CLOUD KITCHEN</strong><small>Fresh food. Easy ordering.</small></div></div>
+    <div class="footer-links"><a href="#menu">Menu</a><a href="#about">About</a><a href="#contact">Contact</a><a href="#order">Order Now</a></div>
+    <p>© 2026 JS Cloud Kitchen. All Rights Reserved.</p>
+  </footer>
+
+  <div class="sticky-order"><a href="#order">ORDER NOW</a><a id="stickyWhatsApp" href="#">WHATSAPP</a></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
